@@ -1,0 +1,32 @@
+## YAML Template.
+---
+version: 0.0
+os: linux
+
+files:
+  - source: ./home/circleci/project/target/ROOT.war
+    destination: /var/lib/tomcat9/webapps
+  - source: ./codedeploy/cloudwatch-config.json
+    destination: /opt/aws/amazon-cloudwatch-agent/bin
+
+hooks:
+    ApplicationStop:
+    - location: ./codedeploy/applicationStop.sh    
+      timeout: 300 
+      runas: ubuntu
+    BeforeInstall:
+    - location: ./codedeploy/beforeInstall.sh    
+      timeout: 300 
+      runas: ubuntu
+    AfterInstall:
+    - location: ./codedeploy/afterInstall.sh     
+      timeout: 300
+      runas: ubuntu
+    ApplicationStart:
+    - location: ./codedeploy/applicationStart.sh    
+      timeout: 300
+      runas: ubuntu
+    ValidateService:
+    - location: ./codedeploy/validateService.sh    
+      timeout: 300 
+      runas: ubuntu
