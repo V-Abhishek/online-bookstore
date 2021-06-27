@@ -2,7 +2,7 @@
 
 ### PROJECT DESCRIPTION
 
-Online Bookstore is a web application that allows booksellers to sign up and sell their books on the platform. As a customer you need to sign up before making a purchase on the platform. Users (Vendor/Customer) can update their profile and change their password. The application is configured to be hosted on AWS cloud platform. DNS setup along with Route 53 is configured to access the application via the domain name.
+Online Bookstore is a web application that allows booksellers to sign up and sell their books on the platform. As a customer you need to sign up before making a purchase on the platform. Users (Vendor/Customer) can update their profile and change their password. The application is configured to be hosted on AWS cloud platform. DNS setup along with Route 53 is configured to access the application via the domain name. The entire infrastructure is built as code using **Terraform**.
 
 ---
 
