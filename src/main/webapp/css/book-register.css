@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 13, 2020, 4:48:42 AM
+    Author     : Abhishek
+*/
+
+body, html {
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display:table;
+}
+body {
+    background-color: #EFF3F2;
+    display:table-cell;
+    vertical-align:middle;
+}
+form {
+    display:table;/* shrinks to fit conntent */
+    margin:auto;
+}
+label{
+    width: 175px;
+}
+
+input, select {
+    width: 300px;
+}
+
+input[type="radio"] {
+    width: 50px;
+    margin: 1px;
+}
+
+#submission {
+    display: block;
+    position:relative;
+    left:170px;
+    top:10px;
+}
+
+.header {
+    padding: 50px;
+    text-align: center;
+    background: #A8D6D1;
+    color: white;
+    font-size: 20px;
+}
+.content {
+    padding:5px;
+}
+
+input[type="submit"] {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #A8D6D1;
+    padding: 3px;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+input[type="submit"]:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
